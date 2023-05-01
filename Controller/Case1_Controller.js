@@ -42,3 +42,6 @@ function calcular(){
         PResultado.innerText = "Calculo imposible"
    }
   }
+
+//backgraund Inicio
+
