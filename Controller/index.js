@@ -14,7 +14,6 @@ const createRipple = (e) => {
         ripple.remove()
     }, 5000)
 
-    console.log(x, y)
 }
 
 nuestros.addEventListener('click', createRipple)
