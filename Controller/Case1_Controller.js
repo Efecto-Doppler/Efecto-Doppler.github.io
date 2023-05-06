@@ -36,7 +36,7 @@ function calcular(){
                 break;
         }
         PResultado.style = "color:black"
-        PResultado.innerText = "= " + Result.toFixed(2) + " m "
+        PResultado.innerText = "λ= " + Result.toFixed(2) + " m "
     }else{
        PResultado.style = "color:red"
         PResultado.innerText = "Calculo imposible"
