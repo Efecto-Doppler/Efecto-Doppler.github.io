@@ -5,18 +5,44 @@
     <link rel="stylesheet" href="/Styles/Case1_Style.css" />
   </head>
   <body>
-    <h1>Calculadora Efecto doppler 1</h1>
-    <form action="" method="dialog">
-      <h4>V(s) m/s</h4>
-      <input id="op1" placeholder="Operador 1" />
-      <h4>Formula</h4>
-      <input id="Funcion1" placeholder="Doppler 1" />
-      <h4>f(s) Hz</h4>
-      <input id="op2" placeholder="Operador 2" />
+    <section class="div1">
+      <h1>Calculadora Efecto doppler 1</h1>
+      <form action="" method="dialog">
+        <h4>V(s) m/s</h4>
+        <input type="number" id="op1" placeholder="Operador 1" />
+        <h4>Formula</h4>
+        <select name="" id="Funcion1">
+          <option value="Doppler 1 Frente">Doppler 1 Frente</option>
+          <option value="Doppler 1 Atras">Doppler 1 Atras</option>
+        </select>
+        <h4>f(s) Hz</h4>
+        <input type="number" id="op2" placeholder="Operador 2" />
 
-      <input type="submit" value="Calcular" id="calcular" />
-    </form>
+        <br />
+        <br />
+        <input type="submit" value="Calcular" id="calcular" />
 
-    <p id="resultado"></p>
+        <br />
+        <br />
+      </form>
+
+      <p id="resultado"></p>
+    </section>
+
+    <!-- <section class="nuestros"> -->
+
+    <div class="nuestros">
+      <img src="../Images/radio.png" />
+      <div class="onda"></div>
+      <div class="onda" style="animation-delay: 0.2s"></div>
+      <div class="onda" style="animation-delay: 0.4s"></div>
+      <div class="onda" style="animation-delay: 0.6s"></div>
+    </div>
+
+    <!-- <span action="createRipple"></span>
+      <span action="createRipple"class="pato1"></span>
+      <span action="createRipple"class="pato2"></span>
+      <span action="createRipple"class="pato3"></span> -->
+    <!-- </section> -->
   </body>
 </html>
