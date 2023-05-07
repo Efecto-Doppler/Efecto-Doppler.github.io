@@ -41,9 +41,9 @@ span{
     font-size: 24px;
     color: white;
     text-shadow: 0 0 30px white;
-}
+} 
 a { transition: all 0.5s;}
-a:hover { color:white; font-size:40px;  } 
+a:hover { color:white; font-size:40px;  }
 
 .main-container-content{
     margin: 0px auto;
