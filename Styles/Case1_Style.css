@@ -1,58 +1,80 @@
-body{
-    
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    
-              
+body {
+
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+
+}
+#fondo{
+
+  width: 100%;
+  position: fixed;
+  z-index: -2;
+  
 }
 
-*{
+* {
   margin: 0;
-padding: 0;
+  padding: 0;
+  font-family: 'Signika', sans-serif;
 }
-span{
+
+span {
   font-size: 20px;
   font-weight: bold;
 }
 
 section {
+
   margin-top: 10%;
-  font-family: sans-serif;
   text-align: center;
   justify-content: center;
   align-items: center;
- 
+
 
 }
 
-#calculadora{
+h1 {
+  font-family: 'Rubik', sans-serif;
+  -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+  font-size: 35px;
+}
+a{
+  font-family: 'Rubik', sans-serif;
+  -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+}
+#calculadora {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
-  font-weight: normal;
   height: 100px;
+  width: 100%;
   color: white;
-  background-color: #100538;
+  background-color: #78DFE6;
   text-shadow: 0 0 30px white;
 }
 
-section .contenidoCalc{
-margin-top:10%;
-line-height: 200%;
+section .contenidoCalc {
+  margin-top: 10%;
+  line-height: 200%;
 
 }
 
 
-.main-container{
+.main-container {
   display: flex;
   text-align: center;
 
+
 }
 
-.navbar-caso1{
+.navbar-caso1 {
   height: 80px;
   position: fixed;
   top: 0;
@@ -60,36 +82,47 @@ line-height: 200%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #100538;
-  box-shadow: 0px 4px 17px 0px rgba(0,0,0,0.75);
+  background-color: #78DFE6;
+  box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
 }
-.navbar-caso1 ul{
+
+.navbar-caso1 ul {
   display: flex;
   width: 600px;
 }
-.navbar-caso1 li{
+
+.navbar-caso1 li {
   list-style: none;
   margin-left: 80px;
 }
+
 .navbar-caso1 a {
   text-decoration: none;
   font-size: 24px;
   color: white;
   text-shadow: 0 0 30px white;
-} 
-a { transition: all 0.5s;}
-a:hover { color:white; font-size:40px;  
 }
 
-.main-container-content{
+a {
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: white;
+  font-size: 40px;
+}
+
+.main-container-content {
   margin: 0px auto;
   margin-top: 200px;
   width: 900px;
   height: 2000px;
-  box-shadow: 0px -8px 35px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px -8px 35px -4px rgba(0, 0, 0, 0.75);
   border-radius: 25px 25px 0px 0px;
+  background-color: rgba(255, 255, 255, 0.671) !important;
 }
-.main-container-content-title h1{
+
+.main-container-content-title h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,39 +130,50 @@ a:hover { color:white; font-size:40px;
   font-weight: normal;
   height: 100px;
   color: white;
-  background-color: #100538;
+  background-color: #78DFE6;
   border-radius: 25px 25px 0px 0px;
-  text-shadow: 0 0 30px white;
+
 
 }
-.main-container-content-title{
+
+.main-container-content-title {
 
   height: 100px;
   width: 100%;
   justify-content: center;
 
 }
-.main-container-content-definition{
-  border: 2px solid;
+
+.main-container-content-definition {
+
   height: 1050px;
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
   text-align: left;
 }
-.main-container-content-definition p{
+
+.main-container-content-definition p {
   font-size: 20px;
 }
 
-.main-container-content-definition-Img{
+.main-container-content-definition-Img {
   display: flex;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 30px;
 }
-.main-container-content-definition ul li{
+
+.main-container-content-definition ul li {
   margin: 50px;
-  font-size: 20px ;
+  font-size: 20px;
+}
+
+.main-container-content-calculator #calculadora h1 {
+  font-family: 'Rubik', sans-serif;
+  -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+  font-size: 35px;
+  text-shadow: 0 0 30px white;
 }
 
 
@@ -208,61 +252,69 @@ a:hover { color:white; font-size:40px;
 
 
 .nuestros {
-    
+
   border: 2px solid;
-   z-index: -1;
-    position: absolute;
-    right: 44%;
-    top: 205%;
-    width: 400px;
-    height: 400px;
-  }
-  .nuestros img{
-    top: 68%;
-    position: absolute;
-    right: 18%;
+  position: absolute;
+  right: 44%;
+  top: 205%;
+  width: 400px;
+  height: 400px;
+}
+
+.nuestros img {
+  top: 68%;
+  position: absolute;
+  right: 11%;
+}
+
+
+
+
+.onda {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid black;
+  opacity: 0.5;
+  animation: onda 3s linear infinite backwards;
+}
+
+.onda:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.onda:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.onda:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+#sirena{
+  position: relative;
+  left: 103px;
+  margin-top: 5px;
+}
+
+@keyframes onda {
+  0% {
+    transform: scale(0);
+    opacity: 1;
   }
 
- 
+  50% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
 
-  
-  .onda {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform-origin: 50% 50%;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid black;
-    opacity: 0.5;
-    animation: onda 3s linear infinite backwards;
+  100% {
+    transform: scale(2);
+    opacity: 0;
   }
-  
-  .onda:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  
-  .onda:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-  
-  .onda:nth-child(4) {
-    animation-delay: 0.6s;
-  }
-  
-  @keyframes onda {
-    0% {
-      transform: scale(0);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(1.5);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(2);
-      opacity: 0;
-    }
-  }
+}
