@@ -18,6 +18,21 @@ body {
   
 }
 
+.logo{
+  position: absolute;
+  left: 4%;
+  background-color: white;
+  padding:8px;
+  min-width: 60px;
+  min-height: 45px;
+  border-radius: 200px 200px 200px 200px;
+  display: flex;
+  justify-content: center;
+}
+.logo img{
+  width: 50px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,8 +71,8 @@ a{
   height: 100px;
   width: 100%;
   color: white;
-  background-color: #78DFE6;
-  text-shadow: 0 0 30px white;
+  background-color: rgb(83, 170, 198);
+ 
 }
 
 section .contenidoCalc {
@@ -82,7 +97,7 @@ section .contenidoCalc {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #78DFE6;
+  background-color: rgb(83, 170, 198);
   box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -130,7 +145,7 @@ a:hover {
   font-weight: normal;
   height: 100px;
   color: white;
-  background-color: #78DFE6;
+  background-color: rgb(83, 170, 198);
   border-radius: 25px 25px 0px 0px;
 
 
@@ -173,7 +188,6 @@ a:hover {
   font-family: 'Rubik', sans-serif;
   -webkit-text-stroke: 0.1px rgb(0, 0, 0);
   font-size: 35px;
-  text-shadow: 0 0 30px white;
 }
 
 
@@ -256,9 +270,9 @@ a:hover {
   border: 2px solid;
   position: absolute;
   right: 44%;
-  top: 205%;
+  top: 235%;
   width: 400px;
-  height: 400px;
+  height: 200px;
 }
 
 .nuestros img {
