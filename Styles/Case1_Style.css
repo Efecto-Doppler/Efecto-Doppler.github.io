@@ -75,7 +75,27 @@ a{
  
 }
 
+#ejemplo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 100px;
+  width: 100%;
+  color: white;
+  background-color: rgb(83, 170, 198);
+  margin-top: 30%;
+  line-height: 200%;
+ 
+}
+
 section .contenidoCalc {
+  margin-top: 10%;
+  line-height: 200%;
+
+}
+
+section .contenidoEjemplo {
   margin-top: 10%;
   line-height: 200%;
 
@@ -131,7 +151,7 @@ a:hover {
   margin: 0px auto;
   margin-top: 200px;
   width: 900px;
-  height: 2000px;
+  height: 3900px;
   box-shadow: 0px -8px 35px -4px rgba(0, 0, 0, 0.75);
   border-radius: 25px 25px 0px 0px;
   background-color: rgba(255, 255, 255, 0.671) !important;
@@ -161,7 +181,7 @@ a:hover {
 
 .main-container-content-definition {
 
-  height: 1050px;
+  height: 980px;
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -189,6 +209,80 @@ a:hover {
   -webkit-text-stroke: 0.1px rgb(0, 0, 0);
   font-size: 35px;
 }
+
+.main-container-content-calculator{
+  height: 700px;
+}
+
+.main-container-content-ejemplo #ejemplo h1 {
+  font-family: 'Rubik', sans-serif;
+  -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+  font-size: 35px;
+  
+
+}
+.main-container-content-ejemplo #ejemplo {
+  margin-top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.main-container-content-ejemplo {
+
+  height: 2000px;
+
+  text-align: left;
+}
+
+
+.main-container-content-ejemplo-Img .formula11{
+  display: flex;
+  justify-content: center;
+}
+
+.main-container-content-ejemplo-Img .formula12{
+  display: flex;
+  justify-content: center;
+}
+
+.main-container-content-ejemplo-Img .formula13{
+  display: flex;
+  justify-content: center;
+}
+
+.main-container-content-ejemplo-Img img{
+  height: 100px;
+}
+
+.main-container-content-ejemplo-Img .formula12 img{
+  height: 80px;
+  
+}
+
+.main-container-content-ejemplo-Img .formula13 img{
+  height: 80px;
+  
+}
+
+.main-container-content-ejemplo .contenidoEjemplo{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px; 
+}
+
+
+.main-container-content-ejemplo p {
+  font-size: 20px;
+}
+
+
+
+.main-container-content-ejemplo ul li {
+  margin: 50px;
+  font-size: 20px;
+}
+
+
 
 
 
@@ -270,7 +364,7 @@ a:hover {
   border: 2px solid;
   position: absolute;
   right: 44%;
-  top: 235%;
+  top: 435%;
   width: 400px;
   height: 200px;
 }
@@ -286,7 +380,7 @@ a:hover {
 
 .onda {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%;
