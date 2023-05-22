@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script src="/Controller/Case3_Controller.js" defer></script>
+    <link rel="stylesheet" href="/Styles/Case3_Style.css" />
+  </head>
+  <body>
+    <img id="fondo" src="../Images/fondo.jpg" alt="" />
+    <nav class="navbar-caso3">
+      <p class="logo"><img src="https://campusvirtual.ucc.edu.co/d2l/lp/navbars/6606/theme/viewimage/1529928/view?v=20.23.4.18819" alt=""></p>
+      <ul>
+        <li><a href="#definicion">Definicion</a></li>
+        <li><a href="#calculadora">Calculadora</a></li>
+        <li><a href="#ejemplo">Ejemplo</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-container">
+      <div class="main-container-content">
+        <div id="definicion" class="main-container-content-title">
+          <h1>Efecto Doppler III: Titulo descriptivo</h1>
+        </div>
+        <div class="main-container-content-definition">
+          <p>
+            Definicion
+            <br />
+            <br />
+            Definicion
+            <br />
+            <br />
+            Definicion
+          </p>
+          <div class="main-container-content-definition-Img">
+            <img src="aqui va imagen aluciba a tu formula" alt="Formula caso 3" />
+            <br />
+            <img src="aqui va imagen aluciba a tu formula" alt="Formula caso 3" />
+          </div>
+          <span>Donde:</span>
+          <ul>
+            <li>
+              Definicion
+              
+            </li>
+            <li>
+              definicion
+            </li>
+            <li>
+              Definicon
+            </li>
+          </ul>
+
+          <br />
+          <br />
+
+          
+        </div>
+        <div class="main-container-content-calculator">
+          <div id="calculadora">
+            <h1>Calculadora Efecto doppler III</h1>
+          </div>
+          <section class="div1">
+            <div class="contenidoCalc">
+              <div class="calcdiseño">
+
+
+                <!-- Aqui va el funcionamiento de la calculadora. los datos que pides -->
+                <form action="" method="dialog">
+                  <h4>Dato solicitado</h4>
+                  <input type="number" id="op1" placeholder="Operador 1" />
+                  <h4>Formula_ por si es necesaria</h4>
+                  <select name="" id="Funcion1">
+                    <option value="Doppler 3 Frente">Doppler 3 Frente</option>
+                    <option value="Doppler 3 Atras">Doppler 3 Atras</option>
+                  </select>
+                <h4>dato solicitado</h4>
+                <input type="number" id="op2" placeholder="Operador 2" />
+              </form>
+            </div>
+
+
+              <!-- aqui va el botton que va a funcionar en la calculadora -->
+              <button class="calculo" value="Calcular" id="calcular">Calcular</button>
+              <br>
+              <br>
+
+              <!-- resultado para lo calculado -->
+              <p id="resultado"></p>
+
+            </div>
+          </section>
+        </div>
+
+        
+  <!-- dejo la onda con la sirena por si la necesitas -->
+        <div class="main-container-content-example">
+          <div class="nuestros">
+            <img src="../Images/carro.png" />
+            <img id="sirena" src="../Images/sirena.png" alt="" />
+            <div class="onda"></div>
+            <div class="onda" style="animation-delay: 0.2s"></div>
+            <div class="onda" style="animation-delay: 0.4s"></div>
+            <div class="onda" style="animation-delay: 0.6s"></div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+
+    <!-- esto no lo toques es un diseño -->
+    <script>
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("abajo", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>

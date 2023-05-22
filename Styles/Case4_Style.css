@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+	padding: 0;
+    font-family: 'Signika', sans-serif;
+}
+span{
+    font-size: 20px;
+    font-weight: bold;
+}
+form{
+    width: 570px;
+}
+input[type="number"]{
+    margin-left: 20px;
+}
+form button{
+    margin-top: 20px;
+}
+h1 {
+    font-family: 'Rubik', sans-serif;
+    -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+    font-size: 30px;
+}
+h2 {
+    font-family: 'Rubik', sans-serif;
+}
+a{
+    font-family: 'Rubik', sans-serif;
+    -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+    letter-spacing: 2px;
+
+}
+           
+#fondo{
+
+    width: 100%;
+    position: fixed;
+    z-index: -2;
+    
+  }
+.logo{
+    position: absolute;
+    left: 4%;
+    background-color: white;
+    padding:8px;
+    min-width: 60px;
+    min-height: 45px;
+    border-radius: 200px 200px 200px 200px;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 50px;
+  }
+.main-container{
+    display: flex;
+    text-align: center;
+
+}
+.navbar-caso4{
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(83, 170, 198);
+    box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
+}
+/*Estilos para la navbar cuando se baja en la pagina*/
+nav.abajo{
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(83, 169, 198, 0.373);
+    box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
+}
+nav.abajo a{
+    color: rgb(83, 170, 198);
+
+}
+.navbar-caso4 ul{
+    display: flex;
+    width: 600px;
+}
+.navbar-caso4 ul li{
+    list-style: none;
+    margin-left: 80px;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+
+.navbar-caso4 ul li:hover{
+    transform: scale3d(1.5, 1.5, 0.3);
+    -webkit-transform: scale3d(1.5, 1.5, 0.3);
+    -moz-transform: scale3d(1.5, 1.5, 0.3);
+}
+              
+.navbar-caso4 a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    text-shadow: 0 0 30px white;
+} 
+
+
+.main-container-content{
+    margin: 0px auto;
+    margin-top: 200px;
+    width: 900px;
+    height: 3900px;
+    box-shadow: 0px -8px 35px -4px rgba(0, 0, 0, 0.75);
+    border-radius: 25px 25px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.671) !important;
+}
+.main-container-content-title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+    height: 100px;
+    color: white;
+    background-color: rgb(83, 170, 198);
+    border-radius: 25px 25px 0px 0px;
+}
+.main-container-content-title{
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+
+}
+.main-container-calculator-title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+    height: 100px;
+    color: white;
+    background-color: rgb(83, 170, 198);
+
+}
+.main-container-calculator-title{
+
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+
+}
+.main-container-content-definition{
+    height: 600px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.main-container-content-definition p{
+    font-size: 20px;
+}
+
+.main-container-content-definition-Img{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.main-container-content-definition ul li{
+    margin: 50px;
+    font-size: 20px ;
+}
+
+.velocidad_emisor{
+    width: 500px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 60px;
+
+}
+.velocidad_emisor h2{
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+}
+.velocidad_receptor{
+    width: 500px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.velocidad_receptor h2{
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+}
+.frecuencia{
+    width: 500px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.frecuencia h2{
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+}
+.inputr {
+    margin-top: 15px;
+    display: flex;
+}
+.inputr input {
+    width: 90%;
+}
+.inputr h3{
+    margin-left: 10px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.calcular {
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        z-index: 0;
+        background: #fff;
+        overflow: hidden;
+        border: 2px solid rgb(83, 170, 198);;
+        color: rgb(83, 170, 198);;
+      }
+      .calcular:hover {
+        color: #fff;
+      }
+      .calcular:hover:after {
+        width: 100%;
+      }
+      .calcular:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        transition: all 0.3s ease;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background: rgb(83, 170, 198);;
+}
+.inputs {
+    margin-top: 15px;
+    width: 80px;
+    padding: 6px;
+    text-align: center;
+    font-size: 15px;
+    border-width: 0px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: 0px 0px 11px rgba(66,66,66,.37);
+}
+input:focus {
+    outline:none;
+}
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 490.5px;
+  }
+  
+  /* Removes default focus */
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+  /* slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #add8e6;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -4px; /* Centers thumb on the track */
+    background-color: #5dd06a;
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #5dd06a;
+    outline-offset: 0.125rem;
+  }
+  
+  /*********** Firefox styles ***********/
+  /* slider track */
+  input[type="range"]::-moz-range-track {
+    background-color: #add8e6;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-moz-range-thumb {
+    background-color: #5dd06a;
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  input[type="range"]:focus::-moz-range-thumb{
+    outline: 3px solid #5dd06a;
+    outline-offset: 0.125rem;
+  }
+
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/Case4_Style.css" />
+    <script src="/Controller/Case4_Controller.js" defer></script>
+    <title>Caso 4 Efecto Doppler</title>
+  </head>
+  <body>
+    <img id="fondo" src="../Images/fondo.jpg" alt="" />
+    <!-- barra de navegacion -->
+    <nav class="navbar-caso4">
+      <p class="logo">
+        <img
+          src="https://campusvirtual.ucc.edu.co/d2l/lp/navbars/6606/theme/viewimage/1529928/view?v=20.23.4.18819"
+          alt=""
+        />
+      </p>
+      <ul>
+        <li><a href="#definicion">Definicion</a></li>
+        <li><a href="#calculadora">Calculadora</a></li>
+        <li><a href="">Ejemplo</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contenedor principal de la pagina-->
+    <div class="main-container">
+      <!--Contenedor del contenido de la pagina-->
+      <div class="main-container-content">
+        <!--Div del titulo de la definicion-->
+        <div id="definicion" class="main-container-content-title">
+          <h1>
+            Efecto Doppler IV: Fuente en movimiento, receptor en movimiento
+          </h1>
+        </div>
+        <!--Definicion del caso 4-->
+        <div class="main-container-content-definition">
+          <p>
+            Si tanto el foco emisor de ondas como el receptor están en
+            movimiento, la frecuencia aparente o frecuencia percibida por este
+            último aumentará cuando receptor y emisor aumenten su distancia de
+            separación y disminuirá siempre que se reduzca la distancia de
+            separación entre ellos. La siguiente expresión se considera el caso
+            general del efecto Doppler:
+          </p>
+          <!--Imagen de la formula-->
+          <div class="main-container-content-definition-Img">
+            <img src="../Images/Formula_caso4.png" alt="Formula caso 4" />
+          </div>
+          <span>Donde:</span>
+          <ul>
+            <li>
+              f : Frecuencia percibida por el receptor y frecuencia emitida por
+              el foco respectivamente. Su unidad de medida en el Sistema
+              Internacional (S.I.) es el hertzio (Hz)
+            </li>
+            <li>
+              v : Velocidad de propagación de la onda en el medio. Es constante
+              y depende de las características del medio. Se relaciona con la
+              longitud de onda y la frecuencia según v=λ·f. Su unidad de medida
+              en el S.I. es el metro por segundo (m/s)
+            </li>
+            <li>
+              vL, vS: Velocidad del receptor y del emisor (foco)
+              respectivamente. Ambas se suponen menor que v Su unidad de medida
+              en el S.I. es el m/s
+            </li>
+          </ul>
+        </div>
+        <!--Div del titulo calculadora-->
+        <div id="calculadora" class="main-container-calculator-title">
+          <h1>CALCULADORA</h1>
+        </div>
+        <!--Contenedor de la calculadora-->
+        <div class="main-container-content-calculator">
+          <form action="">
+            <!--Contenedor velocidad del emisor-->
+            <div class="velocidad_emisor">
+              <h2>Velocidad del emisor:</h2>
+              <input class="inputs" type="number" id="ve" />
+            </div>
+            <!--Contenedor velocidad del receptor-->
+            <div class="div velocidad_receptor">
+              <h2>Velocidad del receptor:</h2>
+              <input class="inputs" type="number" id="vr" />
+            </div>
+            <!--Contenedor de la frecuencia-->
+            <div class="frecuencia">
+              <h2>Frecuencia:</h2>
+              <input
+                class="inputs"
+                type="number"
+                id="f"
+                onchange="capturar1();"
+              />
+              <br />
+              <!--Contenedor del input range y el h3-->
+              <div class="inputr">
+                <input
+                  type="range"
+                  id="frecuencia"
+                  min="0"
+                  max="1000"
+                  step="1"
+                  value="0"
+                  oninput="capturar();"
+                />
+                <h3 id="mostrar_frecuencia"></h3>
+              </div>
+            </div>
+            <!--Boton para hacer el calculo-->
+            <button class="calcular" type="button" onclick="mostrar();">
+              Calcular
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Script para crear clase de la navbar transparente-->
+    <script>
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("abajo", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>

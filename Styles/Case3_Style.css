@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+body {
+
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+
+}
+#fondo{
+
+  width: 100%;
+  position: fixed;
+  z-index: -2;
+  
+}
+
+.logo{
+  position: absolute;
+  left: 4%;
+  background-color: white;
+  padding:8px;
+  min-width: 60px;
+  min-height: 45px;
+  border-radius: 200px 200px 200px 200px;
+  display: flex;
+  justify-content: center;
+}
+.logo img{
+  width: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Signika', sans-serif;
+}
+
+span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section {
+
+  margin-top: 10%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+  font-size: 35px;
+}
+a{
+  font-family: 'Rubik', sans-serif;
+  -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+}
+#calculadora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 100px;
+  width: 100%;
+  color: white;
+  background-color: rgb(83, 170, 198);
+ 
+}
+
+
+section .contenidoCalc {
+  margin-top: 10%;
+  line-height: 200%;
+
+
+}
+
+.contenidoCalc input {
+  margin-left: 10px;
+    width: 30px;
+    
+    justify-content: center;
+    align-items: center;
+
+    
+      margin-top: 15px;
+      width: 80px;
+      padding: 6px;
+      text-align: center;
+      font-size: 15px;
+      border-width: 0px;
+      border-color: #CCCCCC;
+      background-color: #FFFFFF;
+      color: #000000;
+      border-style: solid;
+      border-radius: 15px;
+      box-shadow: 0px 0px 11px rgba(66,66,66,.37);
+  
+}
+
+.contenidoCalc #Funcion1{
+
+  margin-top: 15px;
+      width: 100px;
+      padding: 6px;
+      text-align: center;
+      margin-left: 6px;
+      font-size: 15px;
+      border-width: 0px;
+      border-color: #CCCCCC;
+      background-color: #FFFFFF;
+      
+      border-style: solid;
+      border-radius: 15px;
+      box-shadow: 0px 0px 11px rgba(66,66,66,.37);
+
+}
+
+
+
+
+
+
+
+.calculo {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid rgb(83, 170, 198);;
+  color: rgb(83, 170, 198);;
+  top: 30px;
+}
+.calculo:hover {
+  color: #fff;
+}
+.calculo:hover:after {
+  width: 100%;
+}
+.calculo:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(83, 170, 198);;
+}
+
+
+
+
+.main-container {
+  display: flex;
+  text-align: center;
+
+
+}
+
+.navbar-caso3 {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(83, 170, 198);
+  box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-caso3 ul {
+  display: flex;
+  width: 600px;
+}
+
+.navbar-caso3 li {
+  list-style: none;
+  margin-left: 80px;
+}
+
+.navbar-caso3 a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  text-shadow: 0 0 30px white;
+}
+
+a {
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: white;
+  font-size: 40px;
+}
+
+.main-container-content {
+  margin: 0px auto;
+  margin-top: 200px;
+  width: 900px;
+  height: 3900px;
+  box-shadow: 0px -8px 35px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 25px 25px 0px 0px;
+  background-color: rgba(255, 255, 255, 0.671) !important;
+}
+
+.main-container-content-title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-weight: normal;
+  height: 100px;
+  color: white;
+  background-color: rgb(83, 170, 198);
+  border-radius: 25px 25px 0px 0px;
+
+
+}
+
+.main-container-content-title {
+
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.main-container-content-definition {
+
+  height: 980px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.main-container-content-definition p {
+  font-size: 20px;
+}
+
+.main-container-content-definition-Img {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.main-container-content-definition ul li {
+  margin: 50px;
+  font-size: 20px;
+}
+
+.main-container-content-calculator #calculadora h1 {
+  font-family: 'Rubik', sans-serif;
+  -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+  font-size: 35px;
+}
+
+.main-container-content-calculator{
+  height: 700px;
+}
+
+
+
+.nuestros {
+
+  border: 2px solid;
+  position: absolute;
+  right: 44%;
+  top: 435%;
+  width: 400px;
+  height: 200px;
+}
+
+.nuestros img {
+  top: 68%;
+  position: absolute;
+  right: 11%;
+}
+
+
+
+
+.onda {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid black;
+  opacity: 0.5;
+  animation: onda 3s linear infinite backwards;
+}
+
+.onda:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.onda:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.onda:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+#sirena{
+  position: relative;
+  left: 103px;
+  margin-top: 5px;
+}
+
+@keyframes onda {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* nav bar para cuando  baja */
+nav.abajo{
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(83, 169, 198, 0.373);
+  box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
+}
+nav.abajo a{
+  color: rgb(83, 170, 198);
+
+}
+.navbar-caso3 ul{
+  display: flex;
+  width: 600px;
+}
+.navbar-caso3 ul li{
+  list-style: none;
+  margin-left: 80px;
+  transition: .5s, color .10s;
+  -webkit-transition: .5s, color .10s;
+  -moz-transition: .5s, color .10s;
+}
+
+.navbar-caso3 ul li:hover{
+  transform: scale3d(1.5, 1.5, 0.3);
+  -webkit-transform: scale3d(1.5, 1.5, 0.3);
+  -moz-transform: scale3d(1.5, 1.5, 0.3);
+}
+            
+.navbar-caso3 a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  text-shadow: 0 0 30px white;
+} 
