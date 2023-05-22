@@ -39,19 +39,7 @@ a{
     letter-spacing: 2px;
 
 }
-
-             
-.grow{
-    transition: .5s, color .10s;
-        -webkit-transition: .5s, color .10s;
-        -moz-transition: .5s, color .10s;
-}
-.grow:hover{
-    transform: scale3d(1.5, 1.5, 0.3);
-        -webkit-transform: scale3d(1.5, 1.5, 0.3);
-        -moz-transform: scale3d(1.5, 1.5, 0.3);
-}
-              
+           
 #fondo{
 
     width: 100%;
@@ -89,6 +77,7 @@ a{
     background-color: rgb(83, 170, 198);
     box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
 }
+/*Estilos para la navbar cuando se baja en la pagina*/
 nav.abajo{
     height: 80px;
     position: fixed;
@@ -236,6 +225,7 @@ nav.abajo a{
     width: 90%;
 }
 .inputr h3{
+    margin-left: 10px;
     width: 30px;
     display: flex;
     justify-content: center;

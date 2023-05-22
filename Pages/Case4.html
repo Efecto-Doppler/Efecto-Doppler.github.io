@@ -27,12 +27,15 @@
 
     <!-- Contenedor principal de la pagina-->
     <div class="main-container">
+      <!--Contenedor del contenido de la pagina-->
       <div class="main-container-content">
+        <!--Div del titulo de la definicion-->
         <div id="definicion" class="main-container-content-title">
           <h1>
             Efecto Doppler IV: Fuente en movimiento, receptor en movimiento
           </h1>
         </div>
+        <!--Definicion del caso 4-->
         <div class="main-container-content-definition">
           <p>
             Si tanto el foco emisor de ondas como el receptor están en
@@ -42,6 +45,7 @@
             separación entre ellos. La siguiente expresión se considera el caso
             general del efecto Doppler:
           </p>
+          <!--Imagen de la formula-->
           <div class="main-container-content-definition-Img">
             <img src="../Images/Formula_caso4.png" alt="Formula caso 4" />
           </div>
@@ -65,19 +69,24 @@
             </li>
           </ul>
         </div>
+        <!--Div del titulo calculadora-->
         <div id="calculadora" class="main-container-calculator-title">
           <h1>CALCULADORA</h1>
         </div>
+        <!--Contenedor de la calculadora-->
         <div class="main-container-content-calculator">
           <form action="">
+            <!--Contenedor velocidad del emisor-->
             <div class="velocidad_emisor">
               <h2>Velocidad del emisor:</h2>
               <input class="inputs" type="number" id="ve" />
             </div>
+            <!--Contenedor velocidad del receptor-->
             <div class="div velocidad_receptor">
               <h2>Velocidad del receptor:</h2>
               <input class="inputs" type="number" id="vr" />
             </div>
+            <!--Contenedor de la frecuencia-->
             <div class="frecuencia">
               <h2>Frecuencia:</h2>
               <input
@@ -87,6 +96,7 @@
                 onchange="capturar1();"
               />
               <br />
+              <!--Contenedor del input range y el h3-->
               <div class="inputr">
                 <input
                   type="range"
@@ -100,6 +110,7 @@
                 <h3 id="mostrar_frecuencia"></h3>
               </div>
             </div>
+            <!--Boton para hacer el calculo-->
             <button class="calcular" type="button" onclick="mostrar();">
               Calcular
             </button>
@@ -107,6 +118,7 @@
         </div>
       </div>
     </div>
+    <!--Script para crear clase de la navbar transparente-->
     <script>
       window.addEventListener("scroll", function () {
         var nav = document.querySelector("nav");
