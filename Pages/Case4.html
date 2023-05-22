@@ -9,11 +9,18 @@
     <title>Caso 4 Efecto Doppler</title>
   </head>
   <body>
+    <img id="fondo" src="../Images/fondo.jpg" alt="" />
     <!-- barra de navegacion -->
-    <nav class="navbar-caso3">
+    <nav class="navbar-caso4">
+      <p class="logo">
+        <img
+          src="https://campusvirtual.ucc.edu.co/d2l/lp/navbars/6606/theme/viewimage/1529928/view?v=20.23.4.18819"
+          alt=""
+        />
+      </p>
       <ul>
         <li><a href="#definicion">Definicion</a></li>
-        <li><a href="">Calculadora</a></li>
+        <li><a href="#calculadora">Calculadora</a></li>
         <li><a href="">Ejemplo</a></li>
       </ul>
     </nav>
@@ -36,7 +43,7 @@
             general del efecto Doppler:
           </p>
           <div class="main-container-content-definition-Img">
-            <img src="../Images/Formula_caso3.png" alt="Formula caso 3" />
+            <img src="../Images/Formula_caso4.png" alt="Formula caso 4" />
           </div>
           <span>Donde:</span>
           <ul>
@@ -58,7 +65,53 @@
             </li>
           </ul>
         </div>
+        <div id="calculadora" class="main-container-calculator-title">
+          <h1>CALCULADORA</h1>
+        </div>
+        <div class="main-container-content-calculator">
+          <form action="">
+            <div class="velocidad_emisor">
+              <h2>Velocidad del emisor:</h2>
+              <input class="inputs" type="number" id="ve" />
+            </div>
+            <div class="div velocidad_receptor">
+              <h2>Velocidad del receptor:</h2>
+              <input class="inputs" type="number" id="vr" />
+            </div>
+            <div class="frecuencia">
+              <h2>Frecuencia:</h2>
+              <input
+                class="inputs"
+                type="number"
+                id="f"
+                onchange="capturar1();"
+              />
+              <br />
+              <div class="inputr">
+                <input
+                  type="range"
+                  id="frecuencia"
+                  min="0"
+                  max="1000"
+                  step="1"
+                  value="0"
+                  oninput="capturar();"
+                />
+                <h3 id="mostrar_frecuencia"></h3>
+              </div>
+            </div>
+            <button class="calcular" type="button" onclick="mostrar();">
+              Calcular
+            </button>
+          </form>
+        </div>
       </div>
     </div>
+    <script>
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("abajo", window.scrollY > 0);
+      });
+    </script>
   </body>
 </html>
