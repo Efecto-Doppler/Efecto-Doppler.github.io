@@ -8,11 +8,16 @@
   <body>
     <img id="fondo" src="../Images/fondo.jpg" alt="" />
     <nav class="navbar-caso1">
-      <p class="logo"><img src="https://campusvirtual.ucc.edu.co/d2l/lp/navbars/6606/theme/viewimage/1529928/view?v=20.23.4.18819" alt=""></p>
+      <p class="logo">
+        <img
+          src="https://campusvirtual.ucc.edu.co/d2l/lp/navbars/6606/theme/viewimage/1529928/view?v=20.23.4.18819"
+          alt=""
+        />
+      </p>
       <ul>
         <li><a href="#definicion">Definicion</a></li>
         <li><a href="#calculadora">Calculadora</a></li>
-        <li><a href="">Ejemplo</a></li>
+        <li><a href="#carro">Ejemplo</a></li>
       </ul>
     </nav>
 
@@ -71,14 +76,6 @@
 
           <br />
           <br />
-
-          <!-- <section class="nuestros"> -->
-
-          <!-- <span action="createRipple"></span>
-            <span action="createRipple"class="pato1"></span>
-            <span action="createRipple"class="pato2"></span>
-            <span action="createRipple"class="pato3"></span> -->
-          <!-- </section> -->
         </div>
         <div class="main-container-content-calculator">
           <div id="calculadora">
@@ -86,33 +83,78 @@
           </div>
           <section class="div1">
             <div class="contenidoCalc">
-              <form action="" method="dialog">
-                <h4>V(s) m/s</h4>
-                <input type="number" id="op1" placeholder="Operador 1" />
-                <h4>Formula</h4>
-                <select name="" id="Funcion1">
-                  <option value="Doppler 1 Frente">Doppler 1 Frente</option>
-                  <option value="Doppler 1 Atras">Doppler 1 Atras</option>
-                </select>
-                <h4>f(s) Hz</h4>
-                <input type="number" id="op2" placeholder="Operador 2" />
-              </form>
-              <button value="Calcular" id="calcular">Calcular</button>
+              <div class="calcdiseño">
+                <form action="" method="dialog">
+                  <h4>Velocidad (m/s)</h4>
+                  <input
+                    type="number"
+                    id="op1"
+                    placeholder=""
+                    autocomplete="off"
+                  />
+                  <h4>Formula</h4>
+                  <select onchange="Persona();" name="" id="Funcion1">
+                    <option value="">Seleccionar</option>
+                    <option value="Doppler 1 Frente">Doppler 1 Frente</option>
+                    <option value="Doppler 1 Atras">Doppler 1 Atras</option>
+                  </select>
+                  <h4>Frecuencia (Hz)</h4>
+                  <input
+                    type="number"
+                    id="op2"
+                    placeholder=""
+                    autocomplete="off"
+                  />
+                </form>
+              </div>
+
+              <button class="calculo" value="Calcular" id="calcular">
+                Calcular
+              </button>
+              <br />
+              <br />
               <p id="resultado"></p>
             </div>
           </section>
         </div>
+
         <div class="main-container-content-example">
-          <div class="nuestros">
-            <img src="../Images/carro.png" />
-            <img id="sirena" src="../Images/sirena.png" alt="" />
-            <div class="onda"></div>
-            <div class="onda" style="animation-delay: 0.2s"></div>
-            <div class="onda" style="animation-delay: 0.4s"></div>
-            <div class="onda" style="animation-delay: 0.6s"></div>
+          <div id="emisor">
+            <div class="movimiento">
+              <div class="carro_onda">
+                <img id="carro" src="/Images/carro3-unscreen.gif" />
+                <div class="onda"></div>
+                <div class="onda" style="animation-delay: 0.2s"></div>
+                <div class="onda" style="animation-delay: 0.4s"></div>
+                <div class="onda" style="animation-delay: 0.6s"></div>
+              </div>
+            </div>
+
+            <img
+              id="persona1"
+              class="persona1"
+              src="/Images/persona.png"
+              alt=""
+            />
+            <img
+              id="persona2"
+              class="persona2"
+              src="/Images/persona.png"
+              alt=""
+            />
+          </div>
+          <div class="carretera">
+            <img src="../Images/carretera.png" alt="" />
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("abajo", window.scrollY > 0);
+      });
+    </script>
   </body>
 </html>

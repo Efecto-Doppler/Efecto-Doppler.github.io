@@ -75,11 +75,99 @@ a{
  
 }
 
+
 section .contenidoCalc {
   margin-top: 10%;
   line-height: 200%;
 
+
 }
+
+.contenidoCalc input {
+  margin-left: 10px;
+    width: 30px;
+    
+    justify-content: center;
+    align-items: center;
+
+    
+      margin-top: 15px;
+      width: 80px;
+      padding: 6px;
+      text-align: center;
+      font-size: 15px;
+      border-width: 0px;
+      border-color: #CCCCCC;
+      background-color: #FFFFFF;
+      color: #000000;
+      border-style: solid;
+      border-radius: 15px;
+      box-shadow: 0px 0px 11px rgba(66,66,66,.37);
+  
+}
+
+.contenidoCalc #Funcion1{
+
+  margin-top: 15px;
+      width: 150px;
+      padding: 6px;
+      text-align: center;
+      margin-left: 6px;
+      font-size: 15px;
+      border-width: 0px;
+      border-color: #CCCCCC;
+      background-color: #FFFFFF;
+      
+      border-style: solid;
+      border-radius: 15px;
+      box-shadow: 0px 0px 11px rgba(66,66,66,.37);
+
+}
+
+
+
+
+
+
+
+.calculo {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid rgb(83, 170, 198);;
+  color: rgb(83, 170, 198);;
+  top: 30px;
+}
+.calculo:hover {
+  color: #fff;
+}
+.calculo:hover:after {
+  width: 100%;
+}
+.calculo:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(83, 170, 198);;
+}
+
+
 
 
 .main-container {
@@ -93,6 +181,7 @@ section .contenidoCalc {
   height: 80px;
   position: fixed;
   top: 0;
+  z-index: 2;
   width: 100%;
   display: flex;
   align-items: center;
@@ -131,7 +220,7 @@ a:hover {
   margin: 0px auto;
   margin-top: 200px;
   width: 900px;
-  height: 2000px;
+  height: 2100px;
   box-shadow: 0px -8px 35px -4px rgba(0, 0, 0, 0.75);
   border-radius: 25px 25px 0px 0px;
   background-color: rgba(255, 255, 255, 0.671) !important;
@@ -161,7 +250,7 @@ a:hover {
 
 .main-container-content-definition {
 
-  height: 1050px;
+  height: 980px;
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -189,6 +278,12 @@ a:hover {
   -webkit-text-stroke: 0.1px rgb(0, 0, 0);
   font-size: 35px;
 }
+
+.main-container-content-calculator{
+  height: 550px;
+}
+
+
 
 
 
@@ -264,21 +359,12 @@ a:hover {
     }
 } */
 
+.polizei img{
+  height: 140px;
+  right: -5%;
 
-.nuestros {
+  
 
-  border: 2px solid;
-  position: absolute;
-  right: 44%;
-  top: 235%;
-  width: 400px;
-  height: 200px;
-}
-
-.nuestros img {
-  top: 68%;
-  position: absolute;
-  right: 11%;
 }
 
 
@@ -286,14 +372,12 @@ a:hover {
 
 .onda {
   position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 3px solid black;
   opacity: 0.5;
   animation: onda 3s linear infinite backwards;
 }
@@ -316,6 +400,23 @@ a:hover {
   margin-top: 5px;
 }
 
+.persona1 #persona{
+  position: relative;
+  left: 250px;
+  margin-top: 130px;
+  height: 60px;
+
+}
+
+.persona2 #persona{
+  position: relative;
+  
+  right: 50px;
+  top: -63px;
+  height: 60px;
+
+}
+
 @keyframes onda {
   0% {
     transform: scale(0);
@@ -331,4 +432,143 @@ a:hover {
     transform: scale(2);
     opacity: 0;
   }
+}
+
+/* nav bar para cuando  baja */
+nav.abajo{
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(83, 169, 198, 0.373);
+  box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
+}
+nav.abajo a{
+  color: rgb(83, 170, 198);
+
+}
+.navbar-caso1 ul{
+  display: flex;
+  width: 600px;
+}
+.navbar-caso1 ul li{
+  list-style: none;
+  margin-left: 80px;
+  transition: .5s, color .10s;
+  -webkit-transition: .5s, color .10s;
+  -moz-transition: .5s, color .10s;
+}
+
+.navbar-caso1 ul li:hover{
+  transform: scale3d(1.5, 1.5, 0.3);
+  -webkit-transform: scale3d(1.5, 1.5, 0.3);
+  -moz-transform: scale3d(1.5, 1.5, 0.3);
+}
+            
+.navbar-caso1 a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  text-shadow: 0 0 30px white;
+} 
+
+.main-container-content-example{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+#emisor{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 50px;
+  width: 855px;
+}
+#emisor #carro{
+  height: 150px;
+  z-index: 1;
+}
+.movimiento{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 800px;
+
+}
+.carro_onda{
+  position: absolute;
+  left: 0;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 265px;
+  animation: carro_onda 8s linear infinite;
+
+}
+
+@keyframes carro_onda {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left:66%;
+}
+}
+
+
+.movimiento .carro_onda #carro{
+  position: absolute;
+  left: 0;
+}
+
+
+.persona1{
+  display: none;
+  position: absolute;
+  margin-right: 500px;
+  height: 70px;
+  margin-bottom: 60px;
+}
+.persona1-show{
+  display: block;
+  position: absolute;
+  margin-right: 500px;
+  height: 70px;
+  margin-bottom: 60px;
+}
+.persona2{
+  display: none;
+  position: absolute;
+  margin-left: 500px;
+  height: 70px;
+  margin-bottom: 60px;
+}
+.persona2-show{
+  display: block;
+  position: absolute;
+  margin-left: 500px;
+  height: 70px;
+  margin-bottom: 60px;
+}
+.carretera{
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+.carretera img{
+  height: 250px;
 }
