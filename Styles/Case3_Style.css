@@ -1,21 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-  }
+
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+
+}
+#fondo{
+
+  width: 100%;
+  position: fixed;
+  z-index: -2;
   
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+}
+
+.logo{
+  position: absolute;
+  left: 4%;
+  background-color: white;
+  padding:8px;
+  min-width: 60px;
+  min-height: 45px;
+  border-radius: 200px 200px 200px 200px;
+  display: flex;
+  justify-content: center;
+}
+.logo img{
+  width: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Signika', sans-serif;
+}
+
+span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section {
+
+  margin-top: 10%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+  font-size: 35px;
+}
+a{
+  font-family: 'Rubik', sans-serif;
+  -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+}
+#calculadora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 100px;
+  width: 100%;
+  color: white;
+  background-color: rgb(83, 170, 198);
+ 
+}
+
+section .contenidoCalc {
+  margin-top: 10%;
+  line-height: 200%;
+
+}
+
+
+.main-container {
+  display: flex;
+  text-align: center;
+
+
+}
+
+.navbar-caso3 {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(83, 170, 198);
+  box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-caso3 ul {
+  display: flex;
+  width: 600px;
+}
+
+.navbar-caso3 li {
+  list-style: none;
+  margin-left: 80px;
+}
+
+.navbar-caso3 a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  text-shadow: 0 0 30px white;
+}
+
+a {
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: white;
+  font-size: 40px;
+}
+
+.main-container-content {
+  margin: 0px auto;
+  margin-top: 200px;
+  width: 900px;
+  height: 2000px;
+  box-shadow: 0px -8px 35px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 25px 25px 0px 0px;
+  background-color: rgba(255, 255, 255, 0.671) !important;
+}
+
+.main-container-content-title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-weight: normal;
+  height: 100px;
+  color: white;
+  background-color: rgb(83, 170, 198);
+  border-radius: 25px 25px 0px 0px;
+
+
+}
+
+.main-container-content-title {
+
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.main-container-content-definition {
+
+  height: 1050px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: left;
+}
+.main-container-content-calculadora h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-weight: normal;
+  height: 100px;
+  color: white;
+  background-color: rgb(83, 170, 198);
+}
+.main-container-content-calculadora {
+  height: 100px;
+  width: 100%;
+  justify-content: center ;
+}
+.main-container-content-definition p {
+  font-size: 20px;
+}
+
+.main-container-content-definition-Img {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.main-container-content-definition ul li {
+  margin: 50px;
+  font-size: 20px;
+}
   
   .form-group {
     margin-bottom: 20px;
@@ -32,7 +213,7 @@ body {
   
   .input {
     display: block;
-    width: 100%;
+    width: 50%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -41,7 +222,7 @@ body {
   
   .select {
     display: block;
-    width: 100%;
+    width: 50%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -49,20 +230,42 @@ body {
   }
   
   .btn {
-    display: block;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    background-color: #2196f3;
-    color: white;
-    font-size: 16px;
-    text-align: center;
+    min-width: 130px;
+    height: 40px;
+    padding: 5px 10px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid rgb(83, 170, 198);
+    color: rbg(83, 170, 198);
+    top: 30px;
   }
   
   .btn:hover {
-    background-color: #0d8bf2;
+    color: #fff;
+  }
+
+  .btn:hover:after{
+    width: 100%;
+  }
+
+  .btn:after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(83, 170, 198);
   }
   
   .resultado {
@@ -75,3 +278,4 @@ body {
     margin-top: 20px;
     text-align: center;
   }
+

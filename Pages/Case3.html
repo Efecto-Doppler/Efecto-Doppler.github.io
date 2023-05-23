@@ -1,43 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <title>Calculadora de Efecto Doppler III</title>
-    <link rel="stylesheet" href="../Styles/Case3_Style.css" />
+    <title>Caso III</title>
+    <script src="/Controller/Case3_Controller.js" defer></script>
+    <link rel="stylesheet" href="/Styles/Case3_Style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Calculadora Efecto Doppler III</h1>
-      <div class="form-group">
-        <label class="label" for="velocidad-sonido"
-          >Velocidad del sonido (m/s):</label
-        >
+    <img id="fondo" src="../Images/fondo.jpg" alt="" />
+    <nav class="navbar-caso3">
+      <p class="logo"><img src="https://campusvirtual.ucc.edu.co/d2l/lp/navbars/6606/theme/viewimage/1529928/view?v=20.23.4.18819" alt=""></p>
+      <ul>
+        <li><a href="#definicion">Definicion</a></li>
+        <li><a href="#calculadora">Calculadora</a></li>
+        <li><a href="">Ejemplo</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-container">
+      <div class="main-container-content">
+        <div id="definicion" class="main-container-content-title">
+          <h1>Efecto Doppler III: Observador en movimiento</h1>
+        </div>
+        <div class="main-container-content-definition">
+          <p>
+            El efecto doppler es el cambio en la frecuencia percibida de cualquier
+            movimiento ondulatorio cuando el emisor, o foco de ondas, y el receptor,
+            u observador, se desplazan uno respecto a otro.
+            <br />
+            <br />
+            Por ejemplo, si pasa por delante de una bocina de
+            advertencia estacionaria, oirá que la frecuencia de la bocina cambia
+            de baja a alta cuando usted pasa.
+            <br />
+            <br />
+            El efecto doppler se puede observar en cualquier tipo de onda, ya sea
+            de sonido, luz, radio, etc. Cuando el observador se acerca a la fuente,
+            la frecuencia de la onda parece aumentar y se escucha un tono mas agudo
+            (para ondas de sonido). Por el contrario, cuando el observador se aleja
+            de la fuente, la frecuencia percibida por este parece disminuir y se
+            escucha un tono mas bajo(para ondas de sonido)
+          </p>
+          <div class="main-container-content-definition-Img">
+            <img src="../Images/formula_caso_heiner.png" alt="Formula caso 3" />
+          </div>
+          <span>Donde:</span>
+          <ul>
+            <li>
+              f(S) : es la frecuencia producida por la fuente en reposo, Su
+              unidad de medida en el Sistema Internacional (S.I.) es el hertzio
+              (Hz).
+            </li>
+            <li>
+              V : Velocidad de propagación de la onda en el medio. Es constante
+              y depende de las características del medio. Se relaciona con la
+              longitud de onda y la frecuencia según v=λ·f. su unidad de medida
+              en el S.I. es el metro por segundo (m/s)
+            </li>
+            <li>
+              V(s): es la velocidad constante del receptor, el signo superior es
+              cuando se acerca a la fuente y el signo inferior es
+              cuando se aleja de la fuente, en el S.I. es el m/s
+            </li>
+          </ul>
+
+          <br />
+          <br />
+        </div>
+
+        <div id="definicion" class="main-container-content-calculadora">
+          <h1>Calculadora Efecto Doppler III</h1>
+          <br>
+          <div class="form-group">
+            <label class="label" for="velocidad-sonido"
+              >Velocidad del sonido (m/s):</label
+            >
+          </div>
+          <div class="form-group">
+            <label class="label" for="valor-velocidad">343 m/s</label>
+          </div>
+          <br>
+          <div class="form-group">
+            <label class="label" for="frecuencia-emisor"
+              >Frecuencia emitida por la fuente (Hz):</label
+            >
+            <input class="input" type="number" id="frecuencia-emisor" required />
+          </div>
+          <br>
+          <div class="form-group">
+            <label class="label" for="velocidad-receptor"
+              >Velocidad del receptor (m/s):</label
+            >
+            <input class="input" type="number" id="velocidad-receptor" required />
+          </div>
+          <br>
+          <div class="form-group">
+            <label class="label" for="tipo-sonido">Tipo de movimiento:</label>
+            <select class="select" id="tipo-sonido" required>
+              <option value="a">Movimiento hacia el receptor</option>
+              <option value="b">Movimiento alejándose del receptor</option>
+            </select>
+          </div>
+          <br>
+          <button class="btn" id="calcular-btn">Calcular</button>
+          <div class="resultado" id="resultado"></div>
+          <div class="chart-container" id="chart-container"></div>
+        </div>
+        <script src="../Controller/Case3_Controller.js"></script>
+          </section>
+        </div>
       </div>
-      <div class="form-group">
-        <label class="label" for="valor-velocidad">343 m/s</label>
-      </div>
-      <div class="form-group">
-        <label class="label" for="frecuencia-emisor"
-          >Frecuencia emitida por el emisor (Hz):</label
-        >
-        <input class="input" type="number" id="frecuencia-emisor" required />
-      </div>
-      <div class="form-group">
-        <label class="label" for="velocidad-receptor"
-          >Velocidad del receptor (m/s):</label
-        >
-        <input class="input" type="number" id="velocidad-receptor" required />
-      </div>
-      <div class="form-group">
-        <label class="label" for="tipo-sonido">Tipo de sonido:</label>
-        <select class="select" id="tipo-sonido" required>
-          <option value="a">Movimiento hacia el receptor</option>
-          <option value="b">Movimiento alejándose del receptor</option>
-        </select>
-      </div>
-      <button class="btn" id="calcular-btn">Calcular</button>
-      <div class="resultado" id="resultado"></div>
-      <div class="chart-container" id="chart-container"></div>
     </div>
-    <script src="../Controller/Case3_Controller.js"></script>
   </body>
 </html>
