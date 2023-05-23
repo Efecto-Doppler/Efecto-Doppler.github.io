@@ -109,7 +109,7 @@ section .contenidoCalc {
 .contenidoCalc #Funcion1{
 
   margin-top: 15px;
-      width: 100px;
+      width: 150px;
       padding: 6px;
       text-align: center;
       margin-left: 6px;
@@ -181,6 +181,7 @@ section .contenidoCalc {
   height: 80px;
   position: fixed;
   top: 0;
+  z-index: 2;
   width: 100%;
   display: flex;
   align-items: center;
@@ -219,7 +220,7 @@ a:hover {
   margin: 0px auto;
   margin-top: 200px;
   width: 900px;
-  height: 3900px;
+  height: 2100px;
   box-shadow: 0px -8px 35px -4px rgba(0, 0, 0, 0.75);
   border-radius: 25px 25px 0px 0px;
   background-color: rgba(255, 255, 255, 0.671) !important;
@@ -279,40 +280,98 @@ a:hover {
 }
 
 .main-container-content-calculator{
-  height: 700px;
+  height: 550px;
 }
 
 
 
-.nuestros {
 
-  border: 2px solid;
-  position: absolute;
-  right: 44%;
-  top: 435%;
-  width: 400px;
-  height: 200px;
+
+
+/* #seccion .nuestros{
+    justify-content: center center;
 }
 
-.nuestros img {
-  top: 68%;
-  position: absolute;
-  right: 11%;
+:root {
+ 
+    --ripple: #000000;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.nuestros span {
+    position: absolute;
+    box-shadow: 0 0 4px var(--ripple),
+                inset 0 0 4px var(--ripple);
+    animation: ripple 4s linear infinite;
+    animation-delay: 5s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nuestros .pato1 {
+    position: absolute;
+    box-shadow: 0 0 4px var(--ripple),
+                inset 0 0 4px var(--ripple);
+    animation: ripple 3s linear infinite;
+    animation-delay: 5s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nuestros .pato2 {
+    position: absolute;
+    box-shadow: 0 0 4px var(--ripple),
+                inset 0 0 4px var(--ripple);
+    animation: ripple 2.5s linear infinite;
+    animation-delay: 5s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nuestros .pato3 {
+    position: absolute;
+    box-shadow: 0 0 4px var(--ripple),
+                inset 0 0 4px var(--ripple);
+    animation: ripple 2s linear infinite;
+    animation-delay: 5s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    90%{
+        width: 350px;
+        height: 350px;
+    }
+    100% {
+        opacity: 0;
+    }
+} */
+
+
 
 
 
 
 .onda {
   position: absolute;
-  top: 30%;
-  left: 50%;
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 3px solid black;
   opacity: 0.5;
   animation: onda 3s linear infinite backwards;
 }
@@ -333,6 +392,23 @@ a:hover {
   position: relative;
   left: 103px;
   margin-top: 5px;
+}
+
+.persona1 #persona{
+  position: relative;
+  left: 250px;
+  margin-top: 130px;
+  height: 60px;
+
+}
+
+.persona2 #persona{
+  position: relative;
+  
+  right: 50px;
+  top: -63px;
+  height: 60px;
+
 }
 
 @keyframes onda {
@@ -392,3 +468,101 @@ nav.abajo a{
   color: white;
   text-shadow: 0 0 30px white;
 } 
+
+.main-container-content-example{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+#emisor{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 50px;
+  width: 855px;
+}
+#emisor #carro{
+  height: 150px;
+  z-index: 1;
+}
+.movimiento{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 800px;
+
+}
+.carro_onda{
+  position: absolute;
+  left: 0;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 265px;
+  animation: carro_onda 8s linear infinite;
+
+}
+
+@keyframes carro_onda {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left:66%;
+}
+}
+
+
+.movimiento .carro_onda #carro{
+  position: absolute;
+  left: 0;
+}
+
+
+.persona1{
+  display: none;
+  position: absolute;
+  margin-right: 500px;
+  height: 70px;
+  margin-bottom: 60px;
+}
+.persona1-show{
+  display: block;
+  position: absolute;
+  margin-right: 500px;
+  height: 70px;
+  margin-bottom: 60px;
+}
+.persona2{
+  display: none;
+  position: absolute;
+  margin-left: 500px;
+  height: 70px;
+  margin-bottom: 60px;
+}
+.persona2-show{
+  display: block;
+  position: absolute;
+  margin-left: 500px;
+  height: 70px;
+  margin-bottom: 60px;
+}
+.carretera{
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+.carretera img{
+  height: 250px;
+}
