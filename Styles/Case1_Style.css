@@ -181,6 +181,7 @@ section .contenidoCalc {
   height: 80px;
   position: fixed;
   top: 0;
+  z-index: 2;
   width: 100%;
   display: flex;
   align-items: center;
@@ -219,7 +220,7 @@ a:hover {
   margin: 0px auto;
   margin-top: 200px;
   width: 900px;
-  height: 3900px;
+  height: 2100px;
   box-shadow: 0px -8px 35px -4px rgba(0, 0, 0, 0.75);
   border-radius: 25px 25px 0px 0px;
   background-color: rgba(255, 255, 255, 0.671) !important;
@@ -364,7 +365,7 @@ a:hover {
   border: 2px solid;
   position: absolute;
   right: 44%;
-  top: 435%;
+  top: 205%;
   width: 400px;
   height: 200px;
 }
@@ -373,6 +374,14 @@ a:hover {
   top: 68%;
   position: absolute;
   right: 11%;
+}
+
+.polizei img{
+  height: 140px;
+  right: -5%;
+
+  
+
 }
 
 
@@ -408,6 +417,23 @@ a:hover {
   position: relative;
   left: 103px;
   margin-top: 5px;
+}
+
+.persona1 #persona{
+  position: relative;
+  left: 250px;
+  margin-top: 130px;
+  height: 60px;
+
+}
+
+.persona2 #persona{
+  position: relative;
+  
+  right: 50px;
+  top: -63px;
+  height: 60px;
+
 }
 
 @keyframes onda {
