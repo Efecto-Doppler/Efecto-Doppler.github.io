@@ -26,9 +26,6 @@ function calcular() {
         const vs = 340;
         var resultado = Number(((vs + parseFloat(vr)) / (vs + parseFloat(ve))) * parseFloat(f));
         document.getElementById("resultado").value = Math.round(resultado).toFixed(2) + " Hz";
-        document.getElementById("f").value = 0;
-        document.getElementById("mostrar_frecuencia").innerHTML = 0;
-        document.getElementById("frecuencia").value = 0;
         document.getElementById("ve").value = "";
         document.getElementById("vr").value = "";
 
