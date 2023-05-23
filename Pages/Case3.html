@@ -74,30 +74,39 @@
           <section class="div1">
             <div class="contenidoCalc">
               <div class="calcdiseño">
-
-
                 <!-- Aqui va el funcionamiento de la calculadora. los datos que pides -->
-                <form action="" method="dialog">
-                  <h4>Velocidad receptor</h4>
-                  <input type="number" id="op1" placeholder="Operador 1" />
-                  <h4>Formula_ por si es necesaria</h4>
-                  <select name="" id="Funcion1">
-                    <option value="Doppler 3 Frente">Doppler 3 Frente</option>
-                    <option value="Doppler 3 Atras">Doppler 3 Atras</option>
-                  </select>
-                <h4>Frecuencia del emisor</h4>
-                <input type="number" id="op2" placeholder="Operador 2" />
-              </form>
+                  <div class="item-container">
+                    <span>Tipo de movimiento</span>
+                    <select class="select-input" name="" id="funcion1" required>
+                      <option value="">Seleciona un tipo de movimiento</option>
+                      <option value="frente">Acercandose al emisor</option>
+                      <option value="atras">Alejandose del emisor</option>
+                    </select>
+                  </div>
+                  <div class="item-container">
+                    <span>Velocidad del sonido (m/s)</span>
+                    <input class="input-readonly" readonly value="343" />
+                  </div>
+                  <div class="item-container">
+                    <span>Frecuencia del emisor (Hz)</span>
+                    <input type="number" id="frecuencia-emisor"/>
+
+                  </div>
+                  <div class="item-container">
+
+                    <span>Velocidad del receptor (m/s)</span>
+                    <input type="number" id="velocidad-receptor" />
+                  </div>
             </div>
 
 
               <!-- aqui va el botton que va a funcionar en la calculadora -->
-              <button class="calculo" value="Calcular" id="calcular">Calcular</button>
+              <button class="calculo" value="Calcular" id="calcular-btn">Calcular</button>
               <br>
               <br>
 
               <!-- resultado para lo calculado -->
-              <p id="resultado"></p>
+              <p id="resultado" class="result-container"></p>
 
             </div>
           </section>
