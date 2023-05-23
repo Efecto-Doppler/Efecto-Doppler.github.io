@@ -78,17 +78,17 @@
           <form action="">
             <!--Contenedor velocidad del emisor-->
             <div class="velocidad_emisor">
-              <h2>Velocidad del emisor:</h2>
+              <h2>Velocidad del emisor (m/s):</h2>
               <input class="inputs" type="number" id="ve" />
             </div>
             <!--Contenedor velocidad del receptor-->
             <div class="div velocidad_receptor">
-              <h2>Velocidad del receptor:</h2>
+              <h2>Velocidad del receptor (m/s):</h2>
               <input class="inputs" type="number" id="vr" />
             </div>
             <!--Contenedor de la frecuencia-->
             <div class="frecuencia">
-              <h2>Frecuencia:</h2>
+              <h2>Frecuencia (Hz):</h2>
               <input
                 class="inputs"
                 type="number"
@@ -106,15 +106,55 @@
                   step="1"
                   value="0"
                   oninput="capturar();"
+                  onchange="frecuencia1();"
                 />
                 <h3 id="mostrar_frecuencia"></h3>
               </div>
             </div>
             <!--Boton para hacer el calculo-->
-            <button class="calcular" type="button" onclick="mostrar();">
+            <button
+              class="calcular"
+              type="button"
+              onclick="mostrar(); calcular();"
+            >
               Calcular
             </button>
           </form>
+          <div class="resultado">
+            <h2>Resultado:</h2>
+            <input id="resultado" class="inputs" type="text" readonly />
+          </div>
+        </div>
+        <div class="main-container-content-example">
+          <div id="emisor">
+            <div class="movimiento">
+              <div class="carro_onda">
+                <img id="carro" src="/Images/carro3-unscreen.gif" />
+                <div id="onda1" class="onda"></div>
+                <div
+                  id="onda2"
+                  class="onda"
+                  style="animation-delay: 0.2s"
+                ></div>
+                <div
+                  id="onda3"
+                  class="onda"
+                  style="animation-delay: 0.4s"
+                ></div>
+                <div
+                  id="onda4"
+                  class="onda"
+                  style="animation-delay: 0.6s"
+                ></div>
+              </div>
+              <div class="carro_receptor">
+                <img id="carror" src="/Images/carro44.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="carretera">
+            <img src="../Images/carretera.png" alt="" />
+          </div>
         </div>
       </div>
     </div>

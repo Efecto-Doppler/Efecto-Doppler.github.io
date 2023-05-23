@@ -71,6 +71,7 @@ a{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +124,7 @@ nav.abajo a{
     margin: 0px auto;
     margin-top: 200px;
     width: 900px;
-    height: 3900px;
+    height: 1900px;
     box-shadow: 0px -8px 35px -4px rgba(0, 0, 0, 0.75);
     border-radius: 25px 25px 0px 0px;
     background-color: rgba(255, 255, 255, 0.671) !important;
@@ -233,6 +234,7 @@ nav.abajo a{
 }
   
 .calcular {
+        margin-top: 50px;
         min-width: 130px;
         height: 40px;
         color: #fff;
@@ -343,5 +345,233 @@ input[type="range"] {
     outline: 3px solid #5dd06a;
     outline-offset: 0.125rem;
   }
+  .main-container-content-example{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+  }
+  .main-container-content-calculator{
+    height: 600px;
+    display: flex;
+    align-items: center;
+  }
+  #emisor{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 50px;
+    width: 855px;
+  }
+  #emisor #carro{
+    height: 150px;
+    z-index: 1;
+  }
+  .movimiento{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 800px;
+  
+  }
+  .onda {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+    opacity: 0.5;
+    animation: onda 3s linear infinite backwards;
+  }
+  .onda-off {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+    opacity: 0.5;
+    animation: onda 3s linear infinite backwards;
+  }
+  .onda-1 {
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+    opacity: 0.5;
+    animation: onda 4s linear infinite backwards;
+  }
+  .onda-2 {
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+    opacity: 0.5;
+    animation: onda 3s linear infinite backwards;
+  }
 
+  .onda-3 {
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+    opacity: 0.5;
+    animation: onda 1.5s linear infinite backwards;
+  }
+  
+  .onda:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .onda:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  .onda:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  @keyframes onda {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+  
+    50% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  .carro_onda{
+    margin-left: 220px;
+    position: absolute;
+    left: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 265px;
+    animation: carro_onda 10s linear infinite;
+  
+  }
+  
+  @keyframes carro_onda {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left:40%;
+  }
+  }
+  
+  
+  .movimiento .carro_onda #carro{
+    position: absolute;
+    left: 0;
+  }
+  
+  
+  .persona1{
+    display: none;
+    position: absolute;
+    margin-right: 500px;
+    height: 70px;
+    margin-bottom: 60px;
+  }
+  .persona1-show{
+    display: block;
+    position: absolute;
+    margin-right: 500px;
+    height: 70px;
+    margin-bottom: 60px;
+  }
+  .persona2{
+    display: none;
+    position: absolute;
+    margin-left: 500px;
+    height: 70px;
+    margin-bottom: 60px;
+  }
+  .persona2-show{
+    display: block;
+    position: absolute;
+    margin-left: 500px;
+    height: 70px;
+    margin-bottom: 60px;
+  }
+  .carretera{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+  }
+  .carretera img{
+    height: 250px;
+  }
+  .resultado{
+    right: 0;
+    margin-left: 100px;
 
+  }
+  .resultado h2{
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+}
+.resultado input{
+    width: 100px;
+}
+#carror{
+    height: 105px;
+}
+.carro_receptor{
+    
+    position: absolute;
+    left: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 265px;
+    animation: carro_onda 10s linear infinite;
+
+}
+
+@keyframes carro_receptor {
+    0% {
+        left: 0%;
+      }
+      100% {
+        left:66%;
+    }
+}
+    
