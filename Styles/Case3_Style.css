@@ -76,6 +76,7 @@ a{
   font-family: 'Rubik', sans-serif;
   -webkit-text-stroke: 0.8px rgb(0, 0, 0);
 }
+
 #calculadora {
   display: flex;
   justify-content: center;
@@ -97,16 +98,26 @@ section .contenidoCalc {
 }
 
 .contenidoCalc input {
-  width: 120px;
-  padding: 6px;
-  font-size: 15px;
-  border-color: #CCCCCC;
-  background-color: #FFFFFF;
-  color: #000000;
-  border-width: 0;
-  outline: none;
-  border-radius: 5px;
-  box-shadow: 0px 0px 11px rgba(66,66,66,.37);
+  margin-left: 10px;
+    width: 30px;
+    
+    justify-content: center;
+    align-items: center;
+
+    
+      margin-top: 15px;
+      width: 80px;
+      padding: 6px;
+      text-align: center;
+      font-size: 15px;
+      border-width: 0px;
+      border-color: #CCCCCC;
+      background-color: #FFFFFF;
+      color: #000000;
+      border-style: solid;
+      border-radius: 15px;
+      box-shadow: 0px 0px 11px rgba(66,66,66,.37);
+  
 }
 
 .contenidoCalc #Funcion1{
@@ -148,8 +159,8 @@ section .contenidoCalc {
   z-index: 0;
   background: #fff;
   overflow: hidden;
-  border: 2px solid rgb(83, 170, 198);
-  color: rgb(83, 170, 198);
+  border: 2px solid rgb(83, 170, 198);;
+  color: rgb(83, 170, 198);;
   top: 30px;
 }
 .calculo:hover {
@@ -169,6 +180,10 @@ section .contenidoCalc {
   height: 100%;
   background: rgb(83, 170, 198);;
 }
+
+
+
+
 
 .main-container {
   display: flex;
@@ -272,43 +287,6 @@ a:hover {
   margin: 50px;
   font-size: 20px;
 }
-
-.main-container-content-calculator #calculadora h1 {
-  font-family: 'Rubik', sans-serif;
-  -webkit-text-stroke: 0.1px rgb(0, 0, 0);
-  font-size: 35px;
-}
-
-.main-container-content-calculator{
-  height: 550px;
-}
-
-.calcdiseño {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin-inline: auto;
-}
-
-.item-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-input[readonly] {
-  background-color: rgb(83, 170, 198);
-  border: 0;
-  border-radius: 4px;
-  padding: 8px 10px;
-  font-size: 15px;
-  cursor: pointer;
-  outline: none;
-  font-weight: 700;
-}
-
-
 
 
 
@@ -609,4 +587,26 @@ select {
 }
 .carretera img{
   height: 250px;
+}
+
+#carror{
+  height: 80px;
+}
+.carro_receptor{
+  position: absolute;
+  
+ 
+  margin-left: 45px;
+  margin-top: -20px;
+  left: 0;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 265px;
+
+  
+
+  
+
 }
