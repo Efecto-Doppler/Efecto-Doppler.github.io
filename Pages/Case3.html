@@ -70,49 +70,39 @@
         </div>
         <div class="main-container-content-calculator">
           <div id="calculadora">
-            <h1>Calculadora Efecto doppler III</h1>
+            <h1>Calculadora </h1>
           </div>
           <section class="div1">
             <div class="contenidoCalc">
               <div class="calcdiseño">
-                <!-- Aqui va el funcionamiento de la calculadora. los datos que pides -->
-                  <div class="item-container">
-                    <span>Tipo de movimiento</span>
-                    <select class="select-input" name="" id="funcion1" required>
-                      <option value="">Seleciona un tipo de movimiento</option>
-                      <option value="frente">Acercandose al emisor</option>
-                      <option value="atras">Alejandose del emisor</option>
-                    </select>
-                  </div>
-                  <div class="item-container">
-                    <span>Velocidad del sonido (m/s)</span>
-                    <input class="input-readonly" readonly value="343" />
-                  </div>
-                  <div class="item-container">
-                    <span>Frecuencia del emisor (Hz)</span>
-                    <input type="number" id="frecuencia-emisor"/>
+                <form action="" method="dialog">
+                  <h4>Velocidad Receptor (m/s)</h4>
+                  <input
+                    type="number"
+                    id="op1"
+                    placeholder=""
+                    autocomplete="off"
+                  />
+                  
+                  <h4>Frecuencia emisor (Hz)</h4>
+                  <input
+                    type="number"
+                    id="op2"
+                    placeholder=""
+                    autocomplete="off"
+                  />
+                </form>
+              </div>
 
-                  </div>
-                  <div class="item-container">
-
-                    <span>Velocidad del receptor (m/s)</span>
-                    <input type="number" id="velocidad-receptor" />
-                  </div>
-            </div>
-
-
-              <!-- aqui va el botton que va a funcionar en la calculadora -->
-              <button class="calculo" value="Calcular" id="calcular-btn">Calcular</button>
-              <br>
-              <br>
-
-              <!-- resultado para lo calculado -->
-              <p id="resultado" class="result-container"></p>
-
+              <button class="calculo" value="Calcular" id="calcular">
+                Calcular
+              </button>
+              <br />
+              <br />
+              <p id="resultado"></p>
             </div>
           </section>
         </div>
-
         
   <!-- dejo la onda con la sirena por si la necesitas -->
   <div class="main-container-content-example">
@@ -120,26 +110,18 @@
       <div class="movimiento">
         <div class="carro_onda">
           <img id="carro" src="/Images/carro3-unscreen.gif" />
-          <div class="onda"></div>
-          <div class="onda" style="animation-delay: 0.2s"></div>
-          <div class="onda" style="animation-delay: 0.4s"></div>
-          <div class="onda" style="animation-delay: 0.6s"></div>
         </div>
       </div>
+      <div class="carro_receptor">
+        <img id="carror" src="/Images/ambulanciaaaaaaaaaa.png" />
+        <div class="onda"></div>
+            <div class="onda" style="animation-delay: 0.2s"></div>
+            <div class="onda" style="animation-delay: 0.4s"></div>
+            <div class="onda" style="animation-delay: 0.6s"></div>
+      </div>
 
-      <img
-        id="persona1"
-        class="persona1"
-        src="/Images/persona.png"
-        alt=""
-      />
-      <img
-        id="persona2"
-        class="persona2"
-        src="/Images/persona.png"
-        alt=""
-      />
     </div>
+    
     <div class="carretera">
       <img src="../Images/carretera.png" alt="" />
     </div>
