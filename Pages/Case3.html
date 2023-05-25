@@ -75,40 +75,32 @@
 
           
         </div>
+        <div id="calculadora">
+          <h1>CALCULADORA </h1>
+        </div>
         <div class="main-container-content-calculator">
-          <div id="calculadora">
-            <h1>CALCULADORA </h1>
-          </div>
-          <section class="div1">
-            <div class="contenidoCalc">
-              <div class="calcdiseño">
-                <form action="" method="dialog">
-                  <h4>Velocidad Receptor (m/s)</h4>
-                  <input
-                    type="number"
-                    id="op1"
-                    placeholder=""
-                    autocomplete="off"
-                  />
-                  
-                  <h4>Frecuencia emisor (Hz)</h4>
-                  <input
-                    type="number"
-                    id="op2"
-                    placeholder=""
-                    autocomplete="off"
-                  />
-                </form>
-              </div>
-
-              <button class="calculo" value="Calcular" id="calcular">
-                Calcular
-              </button>
-              <br />
-              <br />
-              <p id="resultado"></p>
+          <form action="">
+            <!--Contenedor velocidad del emisor-->
+            <div class="velocidad_emisor (m/s)">
+              <h2>Velocidad del receptor (m/s):</h2>
+              <input class="inputs" type="number" id="vr" />
             </div>
-          </section>
+
+            <div class="frecuencia del emisor (Hz)">
+              <h2>Frecuencia del emisor (Hz):</h2>
+              <input class="inputs" type="number" id="f" onchange="" />
+              <br />
+              <!--Contenedor del input range y el h3-->
+            </div>
+            <!--Boton para hacer el calculo-->
+            <button class="calcular" type="button" onclick="calcular();">
+              Calcular
+            </button>
+          </form>
+          <div class="resultado">
+            <h2>Resultado:</h2>
+            <input id="resultado" class="inputs" type="text" readonly />
+          </div>
         </div>
         
   <!-- dejo la onda con la sirena por si la necesitas -->
@@ -120,7 +112,7 @@
         </div>
       </div>
       <div class="carro_receptor">
-        <img id="carror" src="/Images/ambulanciaaaaaaaaaa.png" />
+        <img id="carror" src="/Images/ambulancia1.png" />
         <div class="onda"></div>
             <div class="onda" style="animation-delay: 0.2s"></div>
             <div class="onda" style="animation-delay: 0.4s"></div>

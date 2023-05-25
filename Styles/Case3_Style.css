@@ -43,34 +43,23 @@ span {
   font-size: 20px;
   font-weight: bold;
 }
-
-.result-container{
-  margin-top: 2rem;
-  border: 2px solid rgb(83, 170, 198);
-  color: black;
-  border-radius: 5px;
-  background-color: white;
-  margin-inline: auto;
-  padding: 20px 10px;
-  width: max-content;
-  display: none;
-  transition: all 0.5s ease;
-}
-
-section {
-
-  margin-top: 10%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-
-
+form{
+  width: 570px;
 }
 
 h1 {
   font-family: 'Rubik', sans-serif;
-  -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+  -webkit-text-stroke: 0.1px rgb(0, 0, 0) ;
   font-size: 35px;
+}
+h2 {
+  font-family: 'Rubik', sans-serif;
+}
+form button{
+  margin-top: 20px;
+}
+input[type="number"]{
+  margin-left: 20px;
 }
 a{
   font-family: 'Rubik', sans-serif;
@@ -97,49 +86,6 @@ section .contenidoCalc {
 
 }
 
-.contenidoCalc input {
-  margin-left: 10px;
-    width: 30px;
-    
-    justify-content: center;
-    align-items: center;
-
-    
-      margin-top: 15px;
-      width: 80px;
-      padding: 6px;
-      text-align: center;
-      font-size: 15px;
-      border-width: 0px;
-      border-color: #CCCCCC;
-      background-color: #FFFFFF;
-      color: #000000;
-      border-style: solid;
-      border-radius: 15px;
-      box-shadow: 0px 0px 11px rgba(66,66,66,.37);
-  
-}
-
-.contenidoCalc #Funcion1{
-
-  margin-top: 15px;
-      width: 150px;
-      padding: 6px;
-      text-align: center;
-      margin-left: 6px;
-      font-size: 15px;
-      border-width: 0px;
-      border-color: #CCCCCC;
-      background-color: #FFFFFF;
-      
-      border-style: solid;
-      border-radius: 15px;
-      box-shadow: 0px 0px 11px rgba(66,66,66,.37);
-
-}
-
-
-
 .main-container-calculator-title h1{
   display: flex;
   justify-content: center;
@@ -150,7 +96,6 @@ section .contenidoCalc {
   color: white;
   background-color: rgb(83, 170, 198);
 }
-
 
 
 .calculo {
@@ -177,6 +122,21 @@ section .contenidoCalc {
 }
 .calculo:hover:after {
   width: 100%;
+}
+
+.inputs {
+  margin-top: 15px;
+  width: 80px;
+  padding: 6px;
+  text-align: center;
+  font-size: 15px;
+  border-width: 0px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: 0px 0px 11px rgba(66,66,66,.37);
 }
 .calculo:after {
   content: "";
@@ -244,7 +204,7 @@ a:hover {
   margin: 0px auto;
   margin-top: 200px;
   width: 900px;
-  height: 2100px;
+  height: 2300px;
   box-shadow: 0px -8px 35px -4px rgba(0, 0, 0, 0.75);
   border-radius: 25px 25px 0px 0px;
   background-color: rgba(255, 255, 255, 0.671) !important;
@@ -530,6 +490,7 @@ select {
   align-items: center;
   height: 50px;
   width: 800px;
+  margin-top: 50px;
 
 }
 .carro_onda{
@@ -600,6 +561,82 @@ select {
 
 #carror{
   height: 80px;
+}
+.velocidad_emisor {
+  width: 500px;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+.frecuencia {
+  width: 500px;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+.velocidad_emisor h2 {
+  color: white;
+  -webkit-text-stroke: 0.3px black;
+}
+.frecuencia h2{
+
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+
+}
+.resultado h2{
+  color: white;
+  -webkit-text-stroke: 0.3px black;
+}
+.resultado input{
+  width: 100px;
+}
+.resultado{
+  color: white;
+  -webkit-text-stroke: 0.3px black;
+  right: 0;
+  margin-left: 100px;
+}
+.calcular {
+  margin-top: 50px;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid rgb(83, 170, 198);;
+  color: rgb(83, 170, 198);;
+}
+.calcular:hover {
+  color: #fff;
+}
+.calcular:hover:after {
+  width: 100%;
+}
+.calcular:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(83, 170, 198);;
+}
+.main-container-content-calculator{
+  height: 600px;
+  display: flex;
+  align-items: center;
 }
 .carro_receptor{
   position: absolute;
