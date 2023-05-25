@@ -10,10 +10,12 @@
     <img id="fondo" src="../Images/fondo.jpg" alt="" />
     <nav class="navbar-caso1">
       <p class="logo">
-        <img
-          src="https://campusvirtual.ucc.edu.co/d2l/lp/navbars/6606/theme/viewimage/1529928/view?v=20.23.4.18819"
-          alt=""
-        />
+        <a href="../index.html">
+          <img
+            src="https://campusvirtual.ucc.edu.co/d2l/lp/navbars/6606/theme/viewimage/1529928/view?v=20.23.4.18819"
+            alt=""
+          />
+        </a>
       </p>
       <ul>
         <li><a href="#definicion">Definicion</a></li>
@@ -62,45 +64,34 @@
             </li>
           </ul>
         </div>
+        <!--Div del titulo calculadora-->
+        <div id="calculadora" class="main-container-calculator-title">
+          <h1>CALCULADORA</h1>
+        </div>
+        <!--Contenedor de la calculadora-->
         <div class="main-container-content-calculator">
-          <div id="calculadora">
-            <h1>Calculadora</h1>
-          </div>
-          <section class="div1">
-            <div class="contenidoCalc">
-              <div class="calcdiseño">
-                <form action="" method="dialog">
-                  <h4>Velocidad (m/s)</h4>
-                  <input
-                    type="number"
-                    id="op1"
-                    placeholder=""
-                    autocomplete="off"
-                  />
-                  <h4>Formula</h4>
-                  <select onchange="Persona();" name="" id="Funcion1">
-                    <option value="">Seleccionar</option>
-                    <option value="Doppler 1 Frente">Doppler 1 Frente</option>
-                    <option value="Doppler 1 Atras">Doppler 1 Atras</option>
-                  </select>
-                  <h4>Frecuencia (Hz)</h4>
-                  <input
-                    type="number"
-                    id="op2"
-                    placeholder=""
-                    autocomplete="off"
-                  />
-                </form>
-              </div>
-
-              <button class="calculo" value="Calcular" id="calcular">
-                Calcular
-              </button>
-              <br />
-              <br />
-              <p id="resultado"></p>
+          <form action="">
+            <!--Contenedor velocidad del emisor-->
+            <div class="velocidad_emisor">
+              <h2>Velocidad del emisor (m/s):</h2>
+              <input class="inputs" type="number" id="ve" />
             </div>
-          </section>
+
+            <div class="frecuencia">
+              <h2>Frecuencia del emisor (Hz):</h2>
+              <input class="inputs" type="number" id="f" onchange="" />
+              <br />
+              <!--Contenedor del input range y el h3-->
+            </div>
+            <!--Boton para hacer el calculo-->
+            <button class="calcular" type="button" onclick="calcular();">
+              Calcular
+            </button>
+          </form>
+          <div class="resultado">
+            <h2>Resultado:</h2>
+            <input id="resultado" class="inputs" type="text" readonly />
+          </div>
         </div>
 
         <div class="main-container-content-example">

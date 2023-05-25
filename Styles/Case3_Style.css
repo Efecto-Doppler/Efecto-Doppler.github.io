@@ -140,7 +140,16 @@ section .contenidoCalc {
 
 
 
-
+.main-container-calculator-title h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: normal;
+  height: 100px;
+  color: white;
+  background-color: rgb(83, 170, 198);
+}
 
 
 

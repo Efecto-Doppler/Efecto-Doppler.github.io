@@ -28,7 +28,12 @@ body {
   border-radius: 200px 200px 200px 200px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
+form{
+  width: 570px;
+}
+
 .logo img{
   width: 50px;
 }
@@ -38,12 +43,16 @@ body {
   padding: 0;
   font-family: 'Signika', sans-serif;
 }
-
+form button{
+  margin-top: 20px;
+}
 span {
   font-size: 20px;
   font-weight: bold;
 }
-
+input[type="number"]{
+  margin-left: 20px;
+}
 section {
 
   margin-top: 10%;
@@ -53,11 +62,16 @@ section {
 
 
 }
-
+form button{
+  margin-top: 20px;
+}
 h1 {
   font-family: 'Rubik', sans-serif;
   -webkit-text-stroke: 0.8px rgb(0, 0, 0);
   font-size: 35px;
+}
+h2 {
+  font-family: 'Rubik', sans-serif;
 }
 a{
   font-family: 'Rubik', sans-serif;
@@ -124,12 +138,108 @@ section .contenidoCalc {
 
 }
 
+.main-container-calculator-title h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: normal;
+  height: 100px;
+  color: white;
+  background-color: rgb(83, 170, 198);
+}
 
+.main-container-content-calculator{
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
 
+.inputs {
+  margin-top: 15px;
+  width: 80px;
+  padding: 6px;
+  text-align: center;
+  font-size: 15px;
+  border-width: 0px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: 0px 0px 11px rgba(66,66,66,.37);
+}
+.velocidad_emisor {
+  width: 500px;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+.frecuencia {
+  width: 500px;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+.velocidad_emisor h2 {
+  color: white;
+  -webkit-text-stroke: 0.3px black;
+}
+.frecuencia h2{
 
+    color: white;
+    -webkit-text-stroke: 0.3px black;
 
-
-
+}
+.resultado h2{
+  color: white;
+  -webkit-text-stroke: 0.3px black;
+}
+.resultado input{
+  width: 100px;
+}
+.resultado{
+  color: white;
+  -webkit-text-stroke: 0.3px black;
+  right: 0;
+  margin-left: 100px;
+}
+.calcular {
+  margin-top: 50px;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid rgb(83, 170, 198);;
+  color: rgb(83, 170, 198);;
+}
+.calcular:hover {
+  color: #fff;
+}
+.calcular:hover:after {
+  width: 100%;
+}
+.calcular:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(83, 170, 198);;
+}
 .calculo {
   min-width: 130px;
   height: 40px;

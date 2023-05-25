@@ -8,14 +8,15 @@ body{
 }
 
 *{
-    margin: 0;
+  margin: 0;
 	padding: 0;
-    font-family: 'Signika', sans-serif;
+  font-family: 'Signika', sans-serif;
 }
 span{
     font-size: 20px;
     font-weight: bold;
 }
+
 form{
     width: 570px;
 }
@@ -28,7 +29,7 @@ form button{
 h1 {
     font-family: 'Rubik', sans-serif;
     -webkit-text-stroke: 0.8px rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 35px;
 }
 h2 {
     font-family: 'Rubik', sans-serif;
@@ -130,15 +131,16 @@ nav.abajo a{
     background-color: rgba(255, 255, 255, 0.671) !important;
 }
 .main-container-content-title h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: normal;
-    height: 100px;
-    color: white;
-    background-color: rgb(83, 170, 198);
-    border-radius: 25px 25px 0px 0px;
+  display: flex;
+  font-size: 33px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: normal;
+  height: 100px;
+  color: white;
+  background-color: rgb(83, 170, 198);
+  border-radius: 25px 25px 0px 0px;
 }
 .main-container-content-title{
     height: 100px;
@@ -155,7 +157,6 @@ nav.abajo a{
     height: 100px;
     color: white;
     background-color: rgb(83, 170, 198);
-
 }
 .main-container-calculator-title{
 
