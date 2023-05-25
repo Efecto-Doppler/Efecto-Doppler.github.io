@@ -1,135 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <title>Efecto doppler caso II</title>
     <script src="/Controller/Case2_Controller.js" defer></script>
     <link rel="stylesheet" href="/Styles/Case2_Style.css" />
+    <link rel="shortcut icon" href="../Images/icono.png" />
   </head>
   <body>
     <img id="fondo" src="../Images/fondo.jpg" alt="" />
-    <nav class="navbar-caso2">
-      <p class="logo"><img src="https://campusvirtual.ucc.edu.co/d2l/lp/navbars/6606/theme/viewimage/1529928/view?v=20.23.4.18819" alt=""></p>
+    <nav class="navbar-caso1">
+      <p class="logo">
+        <img
+          src="https://campusvirtual.ucc.edu.co/d2l/lp/navbars/6606/theme/viewimage/1529928/view?v=20.23.4.18819"
+          alt=""
+        />
+      </p>
       <ul>
         <li><a href="#definicion">Definicion</a></li>
         <li><a href="#calculadora">Calculadora</a></li>
-        <li><a href="#ejemplo">Ejemplo</a></li>
+        <li><a href="#carro">Ejemplo</a></li>
       </ul>
     </nav>
 
     <div class="main-container">
       <div class="main-container-content">
         <div id="definicion" class="main-container-content-title">
-          <h1>Efecto Doppler II: Titulo descriptivo</h1>
+          <h1>Efecto Doppler II: Frecuencias</h1>
         </div>
         <div class="main-container-content-definition">
           <p>
-            Si la fuente se mueve hacia el observador, la frecuencia percibida será mayor que la frecuencia real de la fuente
-            *Si la fuente se mueve alejándose del observador, la frecuencia percibida será menor que la frecuencia real de la fuente.
-            <br>
-            <br>
-              <h2>Formula del efecto doppler</h2>
-              <br>
-          <br>
-             <p>
-
-               La fórmula para calcular el cambio de frecuencia debido al efecto Doppler es:
-               Dirección que va del receptor a la fuente.
-              </p>
-               
+            La frecuencia aparente o frecuencia percibida por un receptor en
+            reposo de ondas aumenta cuando el foco emisor se aproxima al
+            receptor y disminuye cuando se aleja según la expresión:
             <br />
-            <br />
-            
           </p>
+
           <div class="main-container-content-definition-Img">
-            <img src="aqui va imagen aluciba a tu formula" alt="Formula caso 2" />
-            <br />
-            <img src="aqui va imagen aluciba a tu formula" alt="Formula caso 2" />
+            <img src="../Images/Caso2.png" alt="Formula caso 1" />
           </div>
           <span>Donde:</span>
           <ul>
-
-              <li> </p>V Rapidez del sonido
-              <li> </p>λ Longitud de la onda 
-              <li> </p>V <sub>(s)</sub>= </p>Velocidad de la fuente
-              <li> </p>F <sub>(L)</sub>= </p> Frecuencia de la onda.
-              <li> </p>F <sub>(s)</sub>= </p> Frecuencia del obervador .</li>
-              </ul>
-          <br />
-          <br />
-
-          
+            <li>
+              f' , f : Frecuencia percibida por el receptor y frecuencia emitida
+              por el foco respectivamente. Dado que el emisor está en
+              movimiento, no coincidirán. Su unidad de medida en el Sistema
+              Internacional (S.I.) es el hertzio (Hz)
+            </li>
+            <li>
+              v : Velocidad de propagación de la onda en el medio. Es constante
+              y depende de las características del medio. Se relaciona con la
+              longitud de onda y la frecuencia según v=λ·f. Su unidad de medida
+              en el S.I. es el metro por segundo (m/s)
+            </li>
+            <li>
+              v<sub>F</sub>: Velocidad del foco. Se supone constante y menor a
+              v. Su unidad de medida en el S.I. es el m/s
+            </li>
+            <li>
+              ∓ : Utilizaremos el signo - si el emisor se acerca al receptor.
+              Utilizaremos el signo + si el emisor se aleja del receptor
+            </li>
+          </ul>
         </div>
         <div class="main-container-content-calculator">
           <div id="calculadora">
-            <h1>Calculadora Efecto doppler II</h1>
+            <h1>Calculadora</h1>
           </div>
           <section class="div1">
             <div class="contenidoCalc">
               <div class="calcdiseño">
-
-
-                <!-- Aqui va el funcionamiento de la calculadora. los datos que pides -->
                 <form action="" method="dialog">
-                  <h4>Dato solicitado</h4>
-                  <input type="number" id="op1" placeholder="Operador 1" />
-                  <h4>Formula_ por si es necesaria</h4>
-                  <select name="" id="Funcion1">
-                    <option value="Doppler 2 Frente">Doppler 3 Frente</option>
-                    <option value="Doppler 2 Atras">Doppler 3 Atras</option>
+                  <h4>Velocidad (m/s)</h4>
+                  <input
+                    type="number"
+                    id="op1"
+                    placeholder=""
+                    autocomplete="off"
+                  />
+                  <h4>Formula</h4>
+                  <select onchange="Persona();" name="" id="Funcion1">
+                    <option value="">Seleccionar</option>
+                    <option value="Doppler 1 Frente">Doppler 1 Frente</option>
+                    <option value="Doppler 1 Atras">Doppler 1 Atras</option>
                   </select>
-                <h4>dato solicitado</h4>
-                <input type="number" id="op2" placeholder="Operador 2" />
-              </form>
-            </div>
+                  <h4>Frecuencia (Hz)</h4>
+                  <input
+                    type="number"
+                    id="op2"
+                    placeholder=""
+                    autocomplete="off"
+                  />
+                </form>
+              </div>
 
-
-              <!-- aqui va el botton que va a funcionar en la calculadora -->
-              <button class="calculo" value="Calcular" id="calcular">Calcular</button>
-              <br>
-              <br>
-
-              <!-- resultado para lo calculado -->
+              <button class="calculo" value="Calcular" id="calcular">
+                Calcular
+              </button>
+              <br />
+              <br />
               <p id="resultado"></p>
-
             </div>
           </section>
         </div>
 
-        
-  <!-- dejo la onda con la sirena por si la necesitas -->
-  <div class="main-container-content-example">
-    <div id="emisor">
-      <div class="movimiento">
-        <div class="carro_onda">
-          <img id="carro" src="/Images/carro3-unscreen.gif" />
-          <div class="onda"></div>
-          <div class="onda" style="animation-delay: 0.2s"></div>
-          <div class="onda" style="animation-delay: 0.4s"></div>
-          <div class="onda" style="animation-delay: 0.6s"></div>
+        <div class="main-container-content-example">
+          <div id="emisor">
+            <div class="movimiento">
+              <div class="carro_onda">
+                <img id="carro" src="/Images/carro3-unscreen.gif" />
+                <div class="onda"></div>
+                <div class="onda" style="animation-delay: 0.2s"></div>
+                <div class="onda" style="animation-delay: 0.4s"></div>
+                <div class="onda" style="animation-delay: 0.6s"></div>
+              </div>
+            </div>
+          </div>
+          <div class="carretera">
+            <img src="../Images/carretera.png" alt="" />
+          </div>
         </div>
       </div>
-
-      <img
-        id="persona1"
-        class="persona1"
-        src="/Images/persona.png"
-        alt=""
-      />
-      <img
-        id="persona2"
-        class="persona2"
-        src="/Images/persona.png"
-        alt=""
-      />
     </div>
-    <div class="carretera">
-      <img src="../Images/carretera.png" alt="" />
-    </div>
-  </div>
-</div>
-</div>
 
-
-    <!-- esto no lo toques es un diseño -->
     <script>
       window.addEventListener("scroll", function () {
         var nav = document.querySelector("nav");
@@ -138,80 +130,3 @@
     </script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Caso 2</title>
-  </head>
-  <body>
-    
-  <h1>Caso 2 (Frecuencias)</h1>
-
-  <p>*Si la fuente se mueve hacia el observador, la frecuencia percibida será mayor que la frecuencia real de la fuente</p>
-  <p>*Si la fuente se mueve alejándose del observador, la frecuencia percibida será menor que la frecuencia real de la fuente.</p>
-  <h2>Formula del efecto doppler</h2>
-  <p>La fórmula para calcular el cambio de frecuencia debido al efecto Doppler es:</p>
-  <p><strong>Dirección que va del receptor a la fuente.</strong></p>
-  <p><strong>F<sub>L</sub>= <sup>V</sup>&frasl;<sub>V+VS</sub></span>&times;Fs </p></strong></p>
-  <p><strong>Detras de la fuente</strong></p>
-   <p><strong>λ= <sup>V</sup>&frasl;F<sub>S</sub> </p></strong></p>
-<p><strong>F<sub>L</sub>= <sup>V</sup>&frasl;<sub>λ</sub> </p></strong></p>
-<li><strong>V</strong> Rapidez del sonido
-   <li><strong>λ </strong>Longitud de la onda 
-     <li><strong>V<sub>s</sub></strong>Velocidad de la fuente
-     <li><strong>F<sub>L</sub></strong> Frecuencia de la onda.
-    <li><strong>F<sub>s</sub></strong> Frecuencia del obervador .</li>
-  </ul>
-  </body>
-</html> -->

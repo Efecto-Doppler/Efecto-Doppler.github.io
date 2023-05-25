@@ -177,7 +177,7 @@ section .contenidoCalc {
 
 }
 
-.navbar-caso2 {
+.navbar-caso1 {
   height: 80px;
   position: fixed;
   top: 0;
@@ -190,17 +190,17 @@ section .contenidoCalc {
   box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
-.navbar-caso2 ul {
+.navbar-caso1 ul {
   display: flex;
   width: 600px;
 }
 
-.navbar-caso2 li {
+.navbar-caso1 li {
   list-style: none;
   margin-left: 80px;
 }
 
-.navbar-caso2 a {
+.navbar-caso1 a {
   text-decoration: none;
   font-size: 24px;
   color: white;
@@ -220,7 +220,7 @@ a:hover {
   margin: 0px auto;
   margin-top: 200px;
   width: 900px;
-  height: 2100px;
+  height: 1900px;
   box-shadow: 0px -8px 35px -4px rgba(0, 0, 0, 0.75);
   border-radius: 25px 25px 0px 0px;
   background-color: rgba(255, 255, 255, 0.671) !important;
@@ -250,7 +250,7 @@ a:hover {
 
 .main-container-content-definition {
 
-  height: 980px;
+  height: 750px;
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -444,11 +444,11 @@ nav.abajo a{
   color: rgb(83, 170, 198);
 
 }
-.navbar-caso2 ul{
+.navbar-caso1 ul{
   display: flex;
   width: 600px;
 }
-.navbar-caso2 ul li{
+.navbar-caso1 ul li{
   list-style: none;
   margin-left: 80px;
   transition: .5s, color .10s;
@@ -456,13 +456,13 @@ nav.abajo a{
   -moz-transition: .5s, color .10s;
 }
 
-.navbar-caso2 ul li:hover{
+.navbar-caso1 ul li:hover{
   transform: scale3d(1.5, 1.5, 0.3);
   -webkit-transform: scale3d(1.5, 1.5, 0.3);
   -moz-transform: scale3d(1.5, 1.5, 0.3);
 }
             
-.navbar-caso2 a {
+.navbar-caso1 a {
   text-decoration: none;
   font-size: 24px;
   color: white;
